@@ -23,7 +23,7 @@ class HSI_Loader(Dataset):
 
 
 if __name__ == "__main__":
-    HSI_dataset = HSI_Loader('guide_curve.npy', 'guide_h.npy')
+    HSI_dataset = HSI_Loader('train_data.npy', 'label_data.npy')
     print("数据个数：", len(HSI_dataset))
     train_loader = torch.utils.data.DataLoader(dataset=HSI_dataset,
                                                batch_size=32,

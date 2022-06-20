@@ -25,9 +25,10 @@ class FC(nn.Module):
         super().__init__()
         self.fc = nn.Sequential(
             nn.Flatten(),
+
             nn.Linear(1408, 704),
             nn.Linear(704, 352),
-            nn.Linear(352, 2)
+            nn.Linear(352, 5)
         )
 
     def forward(self, x):

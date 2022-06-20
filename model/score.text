@@ -1,0 +1,16 @@
+FPR = FP/N   ;   TPR = TP / P
+P = 1600   ; N = 8400
+
+1)  0.5m
+    准确率为：0.9453999996185303
+    f1_score:0.9454
+    precesion_score:0.9454
+    recall_score:0.9454
+    TP = recall_score * P = 0.9454 * 1600 =
+    FP = TP / precision - TP
+
+    TP = 1512.64
+    FP = 87.36
+
+    FPR = 0.0104
+    TDR = 0.9454
